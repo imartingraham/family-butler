@@ -5,6 +5,9 @@ Current intents are:
 
 - "Ask Alfred if my shopping list has {item}"
 - "Ask Alfred to list items in my shopping list"
+- "Ask Alfred to add {item}"
+
+If we add 'shopping list' to the end of the add intent, Alexa will take over the default add to shopping list command.
 
 ## Requirements
 
