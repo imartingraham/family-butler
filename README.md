@@ -3,7 +3,7 @@ An alexa skill to handle programmable tasks. Initially only handles checking Wun
 
 Current intents are:
 
-- "Ask Alfred is {item} are in my shopping list"
+- "Ask Alfred if my shopping list has {item}"
 - "Ask Alfred to list items in my shopping list"
 
 ## Requirements
