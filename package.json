@@ -1,0 +1,16 @@
+{
+  "name": "the-family-butler",
+  "version": "1.0.0",
+  "description": "aws lambda for interacting with wunderlist through alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ian Graham <ian.graham@ice.com> (http://www.ice.com)",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "dotenv": "^2.0.0",
+    "wunderlist": "^0.1.3"
+  }
+}
