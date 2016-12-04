@@ -4,4 +4,7 @@ CheckShoppingListIntent if our shopping list has {item}
 ListShoppingListIntent to list items in my shopping list
 ListShoppingListIntent to list items in our shopping list
 
+AddShoppingItemIntent to add {item}
+AddShoppingItemIntent to add {item}
+
 WhatAreThoseIntent what are those

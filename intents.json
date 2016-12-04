@@ -6,6 +6,12 @@
         "type": "SHOPPING_LIST_ITEM"
      }]
   }, {
+    "intent": "AddShoppingItemIntent",
+    "slots": [{
+        "name": "item",
+        "type": "SHOPPING_LIST_ITEM"
+     }]
+  }, {
     "intent": "ListShoppingListIntent"
   }, {
     "intent": "WhatAreThoseIntent"

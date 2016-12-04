@@ -52,6 +52,27 @@ var handlers = {
       that.emit(':tell', responseStr);
     });
   },
+  'AddShoppingItemIntent': function(){
+    var that = this;
+    var item = this.event.request.intent.slots.item.value.toLowerCase();
+
+    getShoppingListItems().done(function(items){
+      var titles = getTitlesFromItems(items);
+      if(titles.indexOf(item) > -1){
+        WunderlistApi.http.tasks.create({
+          list_id: parseInt(process.env.WUNDERLIST_LIST_ID, 10),
+          title: item,
+          completed: false
+        }).done(function(task){
+          that.emit(':tell', task.title + ' has been added to your shopping list');
+        }).fail(function(response){ 
+          that.emit(':tell', 'There was an error trying to add ' + item + ' to your shopping list');
+        });
+      }else{
+        that.emit(':tell', item + ' is already in your shopping list');
+      }
+    });
+  },
   'WhatAreThoseIntent': function(){
     this.emit(':tell', 'Deez Nuts! Gotty');
   }
