@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test"
   },
-  "author": "Ian Graham <ian.graham@ice.com> (http://www.ice.com)",
+  "author": "Ian Graham <ian@iangraham.io>",
   "license": "ISC",
   "dependencies": {
     "alexa-sdk": "^1.0.6",
